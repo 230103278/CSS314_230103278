@@ -1,0 +1,172 @@
+{
+  "github_username": "230103278",
+  "gpu_uuid": "GPU-f3b1c3b2-e7b4-4a25-2908-82dc3311f7e2",
+  "cpu_sig": "x86_64::2",
+  "cpu_model": "Intel(R) Xeon(R) CPU @ 2.00GHz",
+  "cpu_line_bytes": 64,
+  "instance_seed": 15170688048276696515,
+  "mpi_ranks": 4,
+  "cart_dims": [
+    2,
+    2
+  ],
+  "cart_periods": [
+    false,
+    false
+  ],
+  "node_comm_size": 4,
+  "global_interior_shape": [
+    512,
+    512
+  ],
+  "local_padded_shape": [
+    258,
+    258
+  ],
+  "stencil_steps": 300,
+  "dx": 0.001949317738791423,
+  "dt": 3.1665344448775936e-06,
+  "kappa_min": 0.0800010372358577,
+  "kappa_max": 0.23999989344273776,
+  "dt_max_cfl": 3.958168056096992e-06,
+  "lambda_damp": 0.15,
+  "energy_trace": [
+    {
+      "step": 0,
+      "energy": 0.12321167880449913,
+      "l2_residual": 0.0
+    },
+    {
+      "step": 100,
+      "energy": 0.12317020338785876,
+      "l2_residual": 3.7608727669738054e-05
+    },
+    {
+      "step": 200,
+      "energy": 0.12314035187457648,
+      "l2_residual": 3.652179381756274e-05
+    },
+    {
+      "step": 300,
+      "energy": 0.12311149352619025,
+      "l2_residual": 3.550188398977747e-05
+    }
+  ],
+  "energy_monotonic_decrease": true,
+  "gpu_serialized_ms": 746.862060546875,
+  "gpu_overlapped_ms": 1022.455810546875,
+  "gpu_overlap_speedup": 0.7304590113751764,
+  "parity_max_diff": 0.0,
+  "parity_passed": true,
+  "ptx_counts": {
+    "st.shared.f64": 5,
+    "ld.shared.f64": 5,
+    "bar.sync": 1
+  },
+  "ptx_audit_passed": true,
+  "shm_benchmark": {
+    "window_slots": 64,
+    "alignment_bytes": 128,
+    "iters_per_rank": 40000000,
+    "repeats": 3,
+    "pinned_to_physical_cores": false,
+    "physical_cores_available": 1,
+    "strides": {
+      "1": {
+        "slot_byte_offsets": [
+          0,
+          8,
+          16,
+          24
+        ],
+        "cache_lines_64B": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "line_pairs_128B": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "runs_ns": [
+          378050414,
+          375251410,
+          363553250
+        ],
+        "median_ns": 375251410,
+        "ns_per_update": 9.38128525,
+        "counters_ok": true
+      },
+      "8": {
+        "slot_byte_offsets": [
+          0,
+          64,
+          128,
+          192
+        ],
+        "cache_lines_64B": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "line_pairs_128B": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "runs_ns": [
+          532851271,
+          592690077,
+          642774049
+        ],
+        "median_ns": 592690077,
+        "ns_per_update": 14.817251925,
+        "counters_ok": true
+      },
+      "16": {
+        "slot_byte_offsets": [
+          0,
+          128,
+          256,
+          384
+        ],
+        "cache_lines_64B": [
+          0,
+          2,
+          4,
+          6
+        ],
+        "line_pairs_128B": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "runs_ns": [
+          654036584,
+          537041707,
+          537351425
+        ],
+        "median_ns": 537351425,
+        "ns_per_update": 13.433785625,
+        "counters_ok": true
+      }
+    },
+    "slowdown_stride1_vs_stride8": 0.6331326009360538,
+    "ratio_stride16_vs_stride8": 0.9066313843482823
+  },
+  "llvm_audit": {
+    "native_functions": 2,
+    "store_i64": 5,
+    "load_i64": 5,
+    "python_api_calls": 0
+  },
+  "llvm_audit_passed": true,
+  "verification_passed": true,
+  "generated_utc": "2026-11-19T09:44:12.638994+00:00"
+}
